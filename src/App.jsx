@@ -1,19 +1,17 @@
-import { BrowserRouter, Routes, Route, Switch, Link } from "react-router-dom";
-import Header from "./components/Header";
-import Homepage from ",/pages/Homepage";
-import Blog from ",/pages/Blog";
-import SinglePost from ",/pages/SinglePost";
-import ErrorPage from ",/pages/ErrorPage";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Header from "./components/Header.jsx";
+import Homepage from "./pages/HomePage.jsx";
+import Blog from "./pages/Blog.jsx";
+import SinglePost from "./pages/SinglePost.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 function App() {
 
   return (
     <>
     <BrowserRouter>
+      <Header/>
       {/* <Swicth> */}
-      <header>
-        {<Header/>}
-      </header>
       <main>
         <Routes>
           <Route path="/" element={<Homepage />}/>

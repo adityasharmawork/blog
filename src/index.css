@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -20,7 +20,7 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
+} */
 
 body {
   margin: 0;
@@ -28,9 +28,37 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Tajawal", sans-serif;
+  background-color: #f1f1f1;
 }
 
-h1 {
+img {
+  max-width: 100%;
+  margin: auto;
+}
+
+.block__content p {
+  line-height: 1.6;
+}
+
+.block__content h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 10px 0 20px;
+}
+
+@media (min-width: 768px) {
+  img.blog__image {
+    height: 600px;
+    width: 100%;
+  }
+
+  .block__content p {
+    font-size: 18px;
+  }
+}
+
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
@@ -65,4 +93,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
